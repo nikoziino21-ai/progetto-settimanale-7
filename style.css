@@ -1,0 +1,131 @@
+.site-header {
+  background: linear-gradient(150deg, #193366 0%, #102347 100%);
+  box-shadow: 0 6px 20px rgba(25, 51, 102, 0.16);
+}
+
+.d-none {
+  display: none !important;
+}
+
+.welcome-state {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #dbe4f3;
+  border-left: 4px solid #193366;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(25, 51, 102, 0.06);
+}
+
+.event-modal[hidden] {
+  display: none;
+}
+
+.event-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.event-modal-dialog {
+  position: relative;
+  width: min(100%, 32rem);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.event-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  background: #eef2fa;
+  color: #193366;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.brand-text,
+.brand-btn {
+  color: #193366;
+}
+
+.brand-btn:hover {
+  color: #102347;
+  background-color: #eef2fa;
+}
+
+.brand-spinner {
+  color: #193366;
+}
+
+.brand-border {
+  border-color: #193366 !important;
+}
+
+.brand-badge {
+  background-color: #eef2fa;
+  color: #193366;
+}
+
+.section-heading {
+  color: #193366;
+}
+
+.filter-btn {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.filter-btn.active {
+  background-color: #ffffff;
+  color: #193366;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.team-card {
+  cursor: pointer;
+  border-radius: 14px;
+  border-top: 3px solid transparent !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(25, 51, 102, 0.12) !important;
+  border-top-color: #193366 !important;
+}
+
+.team-badge {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.event-item {
+  cursor: pointer;
+  transition: background-color 0.15s ease, padding-left 0.15s ease;
+}
+
+.event-item:hover {
+  background-color: #f0f4fb;
+  padding-left: 1.2rem !important;
+}
